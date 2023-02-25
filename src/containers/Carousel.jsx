@@ -3,20 +3,21 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 import room from "../assets/Room.png"
 import pintu from "../assets/pintu1.jpg"
+import mobil from "../assets/mobil.jpg"
 
 const uncontrolCars = () => {
   return (
-    <Carousel className="w-min mt-20 lg:mt-40 mx-6 sm:mx-10 lg:mx-20 xl:mx-40">
+    <Carousel className="w-min m-auto mt-20">
       <div className=''>
-        <img className='scale-100' src={room} />
+        <img className='scale-100 rounded-xl' src={room} />
           <p className="legend">Porto 1</p>
       </div>
       <div>
-        <img className="scale-75" src={pintu} />
+        <img className="scale-75 rounded-xl" src={pintu} />
           <p className="legend">Legend 2</p>
       </div>
       <div>
-        <img src="assets/3.jpeg" />
+        <img className="scale-75 rounded-xl" src={mobil} />
           <p className="legend">Legend 3</p>
       </div>
     </Carousel>
